@@ -1,0 +1,40 @@
+{
+  "npmScope": "ngrid-starters",
+  "implicitDependencies": {
+    "angular.json": "*",
+    "package.json": "*",
+    "tslint.json": "*",
+    "nx.json": "*",
+    "tsconfig.base.json": "*"
+  },
+  "projects": {
+    "material": {
+      "tags": []
+    },
+    "material-e2e": {
+      "tags": [],
+      "implicitDependencies": ["material"]
+    },
+    "bootstrap": {
+      "tags": []
+    },
+    "bootstrap-e2e": {
+      "tags": [],
+      "implicitDependencies": ["bootstrap"]
+    },
+    "datasource": {
+      "tags": []
+    }
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/workspace/tasks-runners/default",
+      "options": {
+        "cacheableOperations": ["build", "lint", "test", "e2e"]
+      }
+    }
+  },
+  "affected": {
+    "defaultBase": "master"
+  }
+}
